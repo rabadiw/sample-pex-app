@@ -1,0 +1,8 @@
+---
+applications:
+- name: PexSampleAspNet
+  memory: 1GB
+  buildpacks: 
+  - hwc_buildpack
+  stack: windows
+   
