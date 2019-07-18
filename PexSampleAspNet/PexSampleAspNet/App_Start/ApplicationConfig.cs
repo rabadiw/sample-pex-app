@@ -47,8 +47,9 @@ namespace PexSampleAspNet
                 .AddEnvironmentVariables()
                 .AddConfigServer(environment, factory);
             Configuration = builder.Build();
-            Console.Out("trying to debug...");
-            Console.Out(Configuration["spring.application.name"]);
+            System.Console.WriteLine("trying to debug...");
+            System.Console.WriteLine(Configuration["spring.application.name"]);
+            System.Console.WriteLine(Configuration["testConfigMessage"]);
         }
 
         public static string GetContentRoot()
