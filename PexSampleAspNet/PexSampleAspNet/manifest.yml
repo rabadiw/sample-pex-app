@@ -1,6 +1,6 @@
 ---
 applications:
-- name: PexSampleAspNet
+- name: pexapp
   memory: 1GB
   buildpacks: 
   - hwc_buildpack
