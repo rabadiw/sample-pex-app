@@ -46,9 +46,9 @@ namespace PexSampleAspNet
                 .AddJsonFile($"appsettings.{environment}.json", optional: true)
                 .AddEnvironmentVariables()
                 .AddConfigServer(environment, factory);
-
             Configuration = builder.Build();
-
+            Console.Out("trying to debug...");
+            Console.Out(Configuration["spring.application.name"]);
         }
 
         public static string GetContentRoot()
