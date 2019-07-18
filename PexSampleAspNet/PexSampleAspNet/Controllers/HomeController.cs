@@ -10,6 +10,12 @@ namespace PexSampleAspNet.Controllers
     {
         public ActionResult Index()
         {
+            var config = ApplicationConfig.Configuration;
+            if (null != config)
+            {
+                ViewBag.testConfigMessage = config["testConfigMessage"] ?? "Couldn't load message from Config Server";
+                ViewBag.testConfigMessageClass = config["testConfigMessageClass"] ?? "panel-warning";
+            }
             return View();
         }
 
