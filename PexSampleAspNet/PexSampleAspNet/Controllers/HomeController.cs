@@ -16,6 +16,10 @@ namespace PexSampleAspNet.Controllers
                 ViewBag.testConfigMessage = config["testConfigMessage"] ?? "Couldn't load message from Config Server";
                 ViewBag.testConfigMessageClass = config["testConfigMessageClass"] ?? "panel-warning";
             }
+            else
+            {
+                ViewBag.testConfigMessage = "Default message";
+            }
             return View();
         }
 
