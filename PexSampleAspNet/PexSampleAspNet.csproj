@@ -129,9 +129,9 @@
     <Reference Include="Steeltoe.Extensions.Configuration.CloudFoundryBase, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Steeltoe.Extensions.Configuration.CloudFoundryBase.2.1.0\lib\netstandard2.0\Steeltoe.Extensions.Configuration.CloudFoundryBase.dll</HintPath>
     </Reference>
-    <!--<Reference Include="Steeltoe.Extensions.Configuration.ConfigServerBase, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Steeltoe.Extensions.Configuration.ConfigServerBase, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Steeltoe.Extensions.Configuration.ConfigServerBase.2.1.0\lib\netstandard2.0\Steeltoe.Extensions.Configuration.ConfigServerBase.dll</HintPath>
-    </Reference>-->
+    </Reference>
     <Reference Include="Pivotal.Extensions.Configuration.ConfigServerBase, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Pivotal.Extensions.Configuration.ConfigServerBase.2.1.0\lib\netstandard2.0\Pivotal.Extensions.Configuration.ConfigServerBase.dll</HintPath>
     </Reference>
