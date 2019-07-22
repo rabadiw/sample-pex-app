@@ -3,6 +3,8 @@ using Steeltoe.Extensions.Configuration.CloudFoundry;
 using Pivotal.Extensions.Configuration.ConfigServer;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
+using System;
+using System.IO;
 
 namespace PexSampleAspNet
 {
