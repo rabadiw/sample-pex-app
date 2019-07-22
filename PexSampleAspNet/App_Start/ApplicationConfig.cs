@@ -3,8 +3,6 @@ using Steeltoe.Extensions.Configuration.CloudFoundry;
 using Pivotal.Extensions.Configuration.ConfigServer;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
-using System;
-using System.IO;
 
 namespace PexSampleAspNet
 {
@@ -47,9 +45,6 @@ namespace PexSampleAspNet
                 .AddEnvironmentVariables()
                 .AddConfigServer(environment, factory);
             Configuration = builder.Build();
-            System.Console.WriteLine("trying to debug...");
-            System.Console.WriteLine(Configuration["spring.application.name"]);
-            System.Console.WriteLine(Configuration["testConfigMessage"]);
         }
 
         public static string GetContentRoot()
