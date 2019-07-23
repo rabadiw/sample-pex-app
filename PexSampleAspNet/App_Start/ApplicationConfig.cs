@@ -1,11 +1,10 @@
-using Steeltoe.Extensions.Configuration.CloudFoundry;
-using Pivotal.Extensions.Configuration.ConfigServer;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
 using System;
 using System.IO;
 using Microsoft.Extensions.Configuration;
-
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
+using Steeltoe.Extensions.Configuration.CloudFoundry;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 namespace PexSampleAspNet
 {
