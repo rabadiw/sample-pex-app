@@ -11,7 +11,7 @@ namespace PexSampleAspNet.Controllers
         public ActionResult Index()
         {
             //var config = ApplicationConfig.Configuration;
-            var config = null;
+            var config = (Object)null;
             if (null != config)
             {
                 ViewBag.testConfigMessage = config["testConfigMessage"] ?? "Couldn't load message from Config Server";
