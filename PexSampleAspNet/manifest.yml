@@ -6,5 +6,5 @@ applications:
   - hwc_buildpack
   stack: windows
   services:
-  - config-server
+  - pexapp-config
    
