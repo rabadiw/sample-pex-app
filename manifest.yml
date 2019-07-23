@@ -1,6 +1,0 @@
----
-applications:
-- name: pexasp
-  memory: 1G
-  stack: windows
-  buildpack: hwc_buildpack
