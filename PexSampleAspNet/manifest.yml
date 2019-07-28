@@ -7,4 +7,9 @@ applications:
   stack: windows
   services:
   - pexapp-config
-   
+  - pexlogin
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+    GRANT_TYPE: client_credentials
+    SSO_SCOPES: openid,uaa.resource
+ 

@@ -1,0 +1,1 @@
+cf push -f ./PexSampleAspNet/manifest.yml -p ./PexSampleAspNet/bin/Release/Publish

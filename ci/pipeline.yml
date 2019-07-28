@@ -1,0 +1,46 @@
+---
+resources:
+- name: source-code-repository
+  type: git
+  source:
+    uri: ((sourcecode_git_repo_uri))
+    branch: ((sourcecode_git_repo_branch))
+    username: ((sourcecode_git_repo_username))
+    password: ((sourcecode_git_repo_password))
+
+- name: pipeline-repository
+  type: git
+  source:
+    uri: ((pipeline_git_repo_uri))
+    branch: ((pipeline_git_repo_branch))
+    username: ((pipeline_git_repo_username))
+    password: ((pipeline_git_repo_password))
+
+- name: cloudfoundry-dev
+  type: cf
+  source:
+    api: ((cf_target_url))
+    username: ((cf_username))
+    password: ((cf_password))
+    organization: ((cf_org))
+    space: ((cf_space))
+    skip_cert_check: true
+
+jobs:
+- name: deploy-dotnet-dev
+  plan:
+  - get: source-code-repository
+    trigger: true
+  - get: pipeline-repository
+  - task: build-dotnet-app
+    config:
+      platform: windows    
+      inputs:
+      - name: source-code-repository
+      - name: pipeline-repository
+      run: 
+        path: pipeline-repository/build_app.bat
+  - put: cloudfoundry-dev
+    params:
+      manifest: source-code-repository/PexSampleAspNet/PexSampleAspNet/manifest.yml 
+      path: source-code-repository/PexSampleAspNet/PexSampleAspNet

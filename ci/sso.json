@@ -1,0 +1,10 @@
+{
+  "grant_types": ["client_credentials"],
+  "scopes": ["openid"],
+  "authorities": ["openid", "uaa.resource"],
+  "auto_approved_scopes": ["openid"],
+  "identity_providers": ["uaa"],
+  "required_user_groups": ["openid"],
+  "access_token_lifetime": 300,
+  "refresh_token_lifetime": 86400
+}

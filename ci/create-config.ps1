@@ -1,0 +1,1 @@
+cf create-service p-config-server standard pexapp-config -c ./pexapp-config.json
